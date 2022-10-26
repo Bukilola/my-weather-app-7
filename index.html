@@ -13,7 +13,7 @@
     />
 
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
- <link ref="stylesheet" href="src/style.css" />
+ <link href="src/styles.css" rel="stylesheet" type="text/css" />
     <title>My Weather App</title>
   </head>
   <body>
@@ -53,30 +53,25 @@
 <div class="row">
   <div class="col-6">
     <div class="d-flex weather-temperature">
-    <img
-    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-    alt="Partly cloudy"
-    class="float-left"
-    />
+     <img src="" alt="Partly cloudy" id="icon" class="float-left" />
     <div class="float-left">
       <strong id="temperature"></strong>
       <span class="units">
-    °C | °F
-      </span>
+         <a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                  ><span class="units"> °C</span>
        </div>
       </div>
        </div>
      <div class="col-6">
       <ul>
-        <li>
-          Precipitation: 1%
-        </li>
-        <li>
-          Humidity: 65%
-        </li>
-        <li>
-          Wind: 13km/h
-        </li>
+         <li>
+          Precipitation: <span id="precipitation"></span>%</li>
+          <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+                
       </ul>
     </div>
      </div>
