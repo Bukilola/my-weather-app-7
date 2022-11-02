@@ -1,7 +1,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
      background: #b7b7dd;
 }
+
 
 h1{
     color: rgb(32, 33, 36);
